@@ -4,7 +4,7 @@ enableMdns: false
 listeners: [
   ]
 peers: null
-port: 8888
+port: 8080
 resources:
 - ./resource/WebGui/app
 - ./resource

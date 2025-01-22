@@ -26,7 +26,7 @@ randomMessages:
     - max: 20.0
       min: 8.0
       set: null
-    enabled: true
+    enabled: false
     maxIntervalMs: 1000
     method: setHeadSpeed
     minIntervalMs: 200
@@ -54,10 +54,10 @@ randomMessages:
     - max: 110.0
       min: 70.0
       set: null
-    enabled: true
-    maxIntervalMs: 500
+    enabled: false
+    maxIntervalMs: 1000
     method: moveHead
-    minIntervalMs: 100
+    minIntervalMs: 200
     service: i01
 rate: 100
 type: Random

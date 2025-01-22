@@ -120,6 +120,9 @@ registry:
 - i01.llm
 - i01.llmImg.http
 - i01.llmImg
+- i01.mouth.http
+- i01.rightArm.bicep
+- i01.leftArm.bicep
 resource: resource
 type: Runtime
 virtual: false
