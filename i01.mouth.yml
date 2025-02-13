@@ -1,7 +1,24 @@
 !!org.myrobotlab.service.config.RemoteSpeechConfig
 blocking: false
-listeners: [
-  ]
+listeners:
+- callback: onEndSpeaking
+  listener: i01.mouthControl
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: i01.ear
+  method: publishEndSpeaking
+- callback: onEndSpeaking
+  listener: python
+  method: publishEndSpeaking
+- callback: onStartSpeaking
+  listener: i01.mouthControl
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: i01.ear
+  method: publishStartSpeaking
+- callback: onStartSpeaking
+  listener: python
+  method: publishStartSpeaking
 mute: false
 peers:
   audioFile:
@@ -14,7 +31,7 @@ peers:
     type: HttpClient
 speechRecognizers:
 - i01.ear
-speechType: null
+speechType: Piper
 speechTypes:
   MozillaTTS:
     authToken: null
@@ -39,4 +56,4 @@ speechTypes:
 substitutions: null
 type: RemoteSpeech
 verb: GET
-voice: null
+voice: default
