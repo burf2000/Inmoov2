@@ -86,8 +86,6 @@ registry:
 - intro
 - python
 - i01.audioPlayer
-- i01.chatBot.search
-- i01.chatBot
 - i01.htmlFilter
 - watchMicro
 - i01.fsm
@@ -116,10 +114,6 @@ registry:
 - i01.opencv
 - i01.imageDisplay
 - i01.random
-- i01.llm.http
-- i01.llm
-- i01.llmImg.http
-- i01.llmImg
 - i01.mouth.http
 - i01.rightArm.bicep
 - i01.leftArm.bicep
